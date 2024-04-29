@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./public/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <title>Frontend Mentor | News Homepage</title>
+  </head>
+  <body class="font-inter mx-auto">
+    <!-- Content Wrapper -->
+    <div class="mx-4 my-3 md:py-16 md:px-40 relative">
+      <!-- Nav Bar -->
+      <nav class="flex items-center justify-between mb-12 relative">
+        <div class="logo">
+          <a href="#">
+            <img src="./public/images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div
+          class="menu-items hidden md:block space-x-10 text-darkGrayishBlue font-semibold"
+        >
+          <a href="#" class="menu-item">Home</a>
+          <a href="#" class="menu-item">New</a>
+          <a href="#" class="menu-item">Popular</a>
+          <a href="#" class="menu-item">Trending</a>
+          <a href="#" class="menu-item">Categories</a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div data-id="hamburger-btn" class="absolute top-1/4 right-0 md:hidden">
+          <img
+            src="./public/images/icon-menu.svg"
+            alt="icon-menu"
+            data-id="menu-open"
+            class=""
+          />
+        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <div data-id="mobile-menu" class="hidden absolute right-0 w-72 top-0">
+        <div
+          id="menu-items"
+          class="flex flex-col p-5 text-3xl space-y-10 font-semibold bg-offWhite h-screen"
+        >
+          <div data-id="menu-close-btn" class="self-end">
+            <img
+              src="./public/images/icon-menu-close.svg"
+              alt="icon-menu-close"
+            />
+          </div>
+          <a href="#" class="menu-item">Home</a>
+          <a href="#" class="menu-item">New</a>
+          <a href="#" class="menu-item">Popular</a>
+          <a href="#" class="menu-item">Trending</a>
+          <a href="#" class="menu-item">Categories</a>
+        </div>
+      </div>
+
+      <main class="block gap-10 auto-cols-max md:grid md:grid-cols-3">
+        <!-- Main Grid Content -->
+        <div class="hero-img col-span-2"></div>
+        <section
+          class="text-5xl mb-3 font-extrabold text-veryDarkBlue mt-5 md:text-6xl md:m-0"
+        >
+          <h1>The Bright Future of Web 3.0?</h1>
+        </section>
+        <section class="flex flex-col justify-between">
+          <p class="text-darkGrayishBlue text-lg">
+            We dive into the next evolution of web that claims to put the power
+            of the platforms back into the hands of the people. Butis it really
+            fulfulling its promise?
+          </p>
+          <button
+            class="my-7 self-start bg-softRed text-offWhite w-56 px-4 py-2 uppercase font-semibold tracking-widest hover:text-offWhite hover:bg-veryDarkBlue md:m-0"
+          >
+            Read More
+          </button>
+        </section>
+        <!-- Side Panel -->
+        <section
+          class="text-offWhite bg-veryDarkBlue p-7 col-start-3 row-span-2 row-start-1"
+        >
+          <h2 class="text-4xl text-softOrange font-semibold mb-6">New</h2>
+          <div class="posts">
+            <div class="post">
+              <a href="#"
+                ><h3 class="post-header">Hydrogen VS Electric Cars</h3></a
+              >
+              <p class="post-body divide-y-2">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </div>
+            <div class="post">
+              <a href="#">
+                <h3 class="post-header">The Downside of AI Artistry</h3></a
+              >
+              <p class="post-body">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <div>
+              <a href="#"
+                ><h3 class="post-header">Is VC Funding Drying Up?</h3></a
+              >
+              <p class="post-body">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Bottom Section -->
+        <section
+          class="flex flex-col grid-cols-3 gap-10 mt-6 mb-14 grid-rows auto-cols-min md:grid md:col-span-3"
+        >
+          <div class="bottom-post flex gap-6">
+            <div class="feature-img-left w-44">
+              <img
+                src="./public/images/image-retro-pcs.jpg"
+                alt="image-retro-pcs"
+              />
+            </div>
+            <div class="text-right-side flex flex-col gap-1">
+              <h3 class="text-grayishBlue text-3xl font-bold">01</h3>
+              <a href="#">
+                <h3
+                  class="text-lg font-extrabold text-veryDarkBlue mb-2 mt-1 hover:text-softRed"
+                >
+                  Reviving Retro PCs
+                </h3>
+              </a>
+              <p class="text-darkGrayishBlue">
+                What happens when old PCs are given modern upgrades
+              </p>
+            </div>
+          </div>
+          <div class="bottom-post flex gap-6">
+            <div class="feature-img-left w-36">
+              <img
+                src="./public/images/image-top-laptops.jpg"
+                alt="image-top-laptops"
+              />
+            </div>
+            <div class="text-right-side flex flex-col gap-1">
+              <h3 class="text-grayishBlue text-3xl font-bold">02</h3>
+              <a href="#">
+                <h3
+                  class="text-lg font-extrabold text-veryDarkBlue mb-2 mt-1 hover:text-softRed"
+                >
+                  Top 10 Laptops of 2022
+                </h3>
+              </a>
+              <p class="mt-2 text-darkGrayishBlue">
+                Our best picks for various needs and budget
+              </p>
+            </div>
+          </div>
+          <div class="bottom-post flex gap-6">
+            <div class="feature-img-left w-40">
+              <img
+                src="./public/images/image-gaming-growth.jpg"
+                alt="image-gaming-growth"
+              />
+            </div>
+            <div class="text-right-side flex flex-col gap-1">
+              <h3 class="text-grayishBlue text-3xl font-bold">03</h3>
+              <a href="#">
+                <h3
+                  class="text-lg font-extrabold text-veryDarkBlue mb-2 mt-1 hover:text-softRed"
+                >
+                  The Growth of Gaming
+                </h3>
+              </a>
+              <p class="text-darkGrayishBlue">
+                How the pandemic has sparked fresh opportunities
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./public/js/app.js"></script>
+  </body>
+</html>
